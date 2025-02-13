@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Valentine's Day Invitation</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Will You Be My Valentine?</h1>
+            <p class="heart">❤️</p>
+            <p id="message">Let's go on a date this Valentine's Day!</p>
+            <button id="yes-button" onclick="respondYes()">Yes ❤️</button>
+            <button id="no-button" onclick="shrinkNoExpandYes()">No 💔</button>
+    
+            <!-- Hidden Letter Icon -->
+            <div id="letter-icon" class="hidden" onclick="showLetter()">📩 Click Me</div>
+    
+            <!-- Hidden Letter Content -->
+            <div id="letter" class="hidden">
+                <h2>Happy Heartsday!</h2>
+                <pre id="letter-text"></pre> <!-- This ensures proper formatting -->
+            </div>
+        </div>
+    
+        <audio id="loveSong" src="C:\Users\user\Desktop\valentines day\TJ- Tulad mo.mp3"></audio>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    

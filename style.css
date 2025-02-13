@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffe6e6;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents page shifting */
+}
+
+
+.container {
+    margin-top: 100px;
+}
+
+h1 {
+    color: #d63384;
+}
+
+.heart {
+    font-size: 50px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#yes-button {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#no-button {
+    background-color: #b3b3b3;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#letter-icon {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #ffcccb;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+#letter {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 10px gray;
+    display: none;
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.heart-animation {
+    position: absolute;
+    top: 100vh;
+    font-size: 20px;
+    animation: floatUp 5s linear infinite;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100vh);
+    }
+}
+
+
+@keyframes bounceUpDown {
+    0% { top: 0%; }      /* Start at the top */
+    50% { top: 70%; }   /* Move to the bottom */
+    100% { top: 0%; }    /* Move back up */
+}
+
+.side-gif {
+    position: fixed;
+    width: 280px; /* Adjust size if needed */
+    height: auto;
+    z-index: 1000; /* Keeps GIFs above other content */
+    animation: bounceUpDown 10s ease-in-out infinite; /* Adjust speed as needed */
+}
+
+.left-gif {
+    left: 10px;
+}
+
+.right-gif {
+    right: 10px;
+}
